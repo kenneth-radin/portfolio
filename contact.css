@@ -3,6 +3,7 @@ body {
     background-color: #f4f4f4;
     text-align: center;
     padding: 20px;
+    margin: 0;
 }
 
 /* Header Navigation */
@@ -13,18 +14,29 @@ header {
     border-radius: 10px;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-li {
-    display: inline;
+    flex-wrap: wrap;
 }
 
 li a {
@@ -32,6 +44,7 @@ li a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+    padding: 10px;
 }
 
 li a.active {
@@ -44,16 +57,25 @@ li a.active {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
+/* Contact Container */
 .contact-container {
     display: flex;
     align-items: center;
     gap: 50px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
+    justify-content: center;
 }
 
+/* Contact Info */
 .contact-info {
-    text-align: left;
+    text-align: center;
+    max-width: 400px;
 }
 
 .contact-info h1 {
@@ -78,7 +100,8 @@ li a.active {
 
 /* Profile Picture */
 .contact-image img {
-    width: 300px;
+    width: 250px;
+    max-width: 100%;
     border-radius: 50%;
     border: 5px solid #333;
 }
@@ -87,7 +110,9 @@ li a.active {
 .social-icons {
     margin-top: 20px;
     display: flex;
+    justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .social-icons a img {
@@ -98,4 +123,67 @@ li a.active {
 
 .social-icons a img:hover {
     transform: scale(1.1);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .contact-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .contact-image img {
+        width: 200px;
+    }
+
+    .social-icons a img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .contact-image img {
+        width: 150px;
+    }
+
+    .social-icons a img {
+        width: 30px;
+        height: 30px;
+    }
 }
