@@ -1,0 +1,175 @@
+/* ABOUT PAGE STYLES */
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Header Navigation */
+header {
+    background-color: #4A153E;
+    color: white;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+li a.active {
+    text-decoration: underline;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* About Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* About Info */
+.about-info {
+    text-align: center;
+    max-width: 400px;
+}
+
+.about-info h1 {
+    font-size: 2rem;
+    color: #ED7014;
+}
+
+.about-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Profile Picture */
+.about-image img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #333;
+}
+
+/* Professional Links */
+.professional-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.professional-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #ED7014;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.professional-links a:hover {
+    background-color: #ED7014;
+    color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .about-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-info p {
+        font-size: 1rem;
+    }
+
+    .about-image img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-info p {
+        font-size: 0.9rem;
+    }
+
+    .about-image img {
+        width: 150px;
+    }
+}
