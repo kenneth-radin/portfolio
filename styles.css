@@ -91,22 +91,6 @@ li a.active {
     border: 3px solid #333;
 }
 
-/* BUTTON STYLING */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #ED7014;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-    
-}
-
-.btn:hover {
-    background-color: #c65a10;
-}
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
