@@ -1,123 +1,196 @@
+/* Global Body Styling */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background: url('pics/backround.jpg') no-repeat center center fixed;
+	background-size: cover;
+	text-align: center;
+}
+
 /* Logo Styling */
 .top-logo {
-    padding: 20px;
-    text-align: left;
-  }
-  
-  .logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #4A153E;
-  }
-  
-  /* Hero Section Layout */
-  .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 0 20px;
-  }
-  
-  .hero-text {
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  .hero-text span {
-    color: #ED7014;
-    font-weight: bold;
-  }
-  
-  .school-logo {
-    width: 180px;
-    margin-top: 15px;
-  }
-  
-  .profile-pic {
-    width: 220px;
-    border-radius: 50%;
-    border: 5px solid #ED7014;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Navigation Buttons */
-  .hero-buttons {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .hero-buttons a {
-    text-decoration: none;
-    background-color: #ddd;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 40px;
-    border-radius: 25px;
-    transition: 0.3s ease;
-  }
-  
-  .hero-buttons a:hover {
-    background-color: #ED7014;
-    color: white;
-  }
-  
-  /* Mobile Adjustments */
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-    }
-  
-    .hero-buttons {
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-    }
-  
-    .school-logo {
-      width: 140px;
-    }
-  
-    .profile-pic {
-      width: 180px;
-    }
-  }
-  
-  /* Floating Card Style */
-.hero-card {
-    background-color: white;
-    max-width: 950px;
-    margin: 40px auto;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.8s ease-in-out;
-  }
-  
-  /* Floating Fade Animation */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+	padding: 20px;
+	text-align: left;
+}
 
-  /* Background image */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: url('pics/backround.jpg') no-repeat center center fixed;
-    background-size: cover;
-  }
-  
- 
-  
+.logo {
+	font-size: 22px;
+	font-weight: bold;
+	color: #4A153E;
+}
+
+/* Hero Section Layout */
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
+	padding: 0 20px;
+}
+
+.hero-text {
+	max-width: 400px;
+	text-align: center;
+}
+
+.hero-text span {
+	color: #ED7014;
+	font-weight: bold;
+}
+
+.school-logo {
+	width: 180px;
+	margin-top: 15px;
+}
+
+.profile-pic {
+	width: 220px;
+	border-radius: 50%;
+	border: 5px solid #ED7014;
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Buttons */
+.hero-buttons {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.hero-buttons a {
+	text-decoration: none;
+	background-color: #ddd;
+	color: #333;
+	font-weight: bold;
+	padding: 10px 40px;
+	border-radius: 25px;
+	transition: 0.3s ease;
+}
+
+.hero-buttons a:hover {
+	background-color: #ED7014;
+	color: white;
+}
+
+/* Floating Card Style */
+.hero-card {
+	background-color: white;
+	max-width: 950px;
+	margin: 40px auto;
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+	animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Floating Fade Animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+	.hero-card {
+		padding: 30px;
+	}
+
+	.hero-text {
+		max-width: 100%;
+	}
+
+	.profile-pic {
+		width: 200px;
+	}
+
+	.school-logo {
+		width: 160px;
+	}
+}
+
+/* Tablets and Mobile */
+@media (max-width: 768px) {
+	.hero {
+		flex-direction: column;
+	}
+
+	.hero-buttons {
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+	}
+
+	.school-logo {
+		width: 140px;
+	}
+
+	.profile-pic {
+		width: 180px;
+	}
+
+	.logo {
+		font-size: 20px;
+	}
+
+	.hero-card {
+		margin: 30px 20px;
+		padding: 25px;
+	}
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+	.logo {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.school-logo {
+		width: 120px;
+	}
+
+	.profile-pic {
+		width: 150px;
+	}
+
+	.hero-card {
+		padding: 20px;
+		margin: 20px 10px;
+	}
+
+	.hero-buttons a {
+		padding: 10px 30px;
+		font-size: 0.95rem;
+	}
+}
+
+/* Large Screens (Desktops & 2K+) */
+@media (min-width: 1200px) {
+	.logo {
+		font-size: 26px;
+	}
+
+	.hero-text {
+		font-size: 1.1rem;
+	}
+
+	.profile-pic {
+		width: 250px;
+	}
+
+	.school-logo {
+		width: 200px;
+	}
+}

@@ -115,8 +115,26 @@ body {
 	filter: brightness(1.2);
 }
 
-/* Responsive Design */
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+	.contact-container {
+		padding: 30px;
+		gap: 40px;
+	}
+
+	.social-icons {
+		gap: 12px;
+	}
+}
+
+/* Tablets and Small Laptops */
 @media (max-width: 768px) {
+	body {
+		padding: 15px;
+	}
+
 	.contact-section {
 		flex-direction: column;
 		align-items: center;
@@ -147,7 +165,12 @@ body {
 	}
 }
 
+/* Phones */
 @media (max-width: 480px) {
+	.contact-container {
+		padding: 20px;
+	}
+
 	.contact-info h1 {
 		font-size: 1.5rem;
 	}
@@ -163,6 +186,33 @@ body {
 	.social-icons a img {
 		width: 30px;
 		height: 30px;
+	}
+
+	.back-button {
+		top: 10px;
+		left: 10px;
+		width: 35px;
+		height: 35px;
+	}
+}
+
+/* Large Screens (Desktops & 2K+) */
+@media (min-width: 1200px) {
+	.contact-info h1 {
+		font-size: 2.5rem;
+	}
+
+	.contact-info p {
+		font-size: 1.4rem;
+	}
+
+	.contact-image img {
+		width: 280px;
+	}
+
+	.social-icons a img {
+		width: 50px;
+		height: 50px;
 	}
 }
 
