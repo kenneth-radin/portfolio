@@ -1,141 +1,123 @@
-/* GLOBAL STYLES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f4f4f4;
-    text-align: center;
+/* Logo Styling */
+.top-logo {
     padding: 20px;
-}
-
-/* HEADER NAVIGATION */
-header {
-    background-color: #4A153E;
-    padding: 15px 0;
-    border-radius: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* Logo */
-.logo {
-    font-size: 24px;
+    text-align: left;
+  }
+  
+  .logo {
+    font-size: 22px;
     font-weight: bold;
-    color: white;
-}
-
-/* Navigation Menu */
-ul {
-    list-style: none;
+    color: #4A153E;
+  }
+  
+  /* Hero Section Layout */
+  .hero {
     display: flex;
-    gap: 20px;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: 0.3s;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-li a:hover,
-li a.active {
-    text-decoration: underline;
-}
-
-/* HERO SECTION */
-.hero {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 50px;
-    margin-top: 40px;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .hero-text {
+    max-width: 400px;
     text-align: center;
-}
-
-/* Hero Text */
-.hero-text {
-    text-align: center;
-    max-width: 500px;
-}
-
-.hero-text h1 {
-    font-size: 36px;
-}
-
-.hero-text span {
+  }
+  
+  .hero-text span {
     color: #ED7014;
     font-weight: bold;
-}
-
-/* Hero Image */
-.hero-image img {
-    width: 200px;
-    height: auto;
+  }
+  
+  .school-logo {
+    width: 180px;
+    margin-top: 15px;
+  }
+  
+  .profile-pic {
+    width: 220px;
     border-radius: 50%;
-    border: 3px solid #333;
-}
-
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
+    border: 5px solid #ED7014;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Navigation Buttons */
+  .hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-buttons a {
+    text-decoration: none;
+    background-color: #ddd;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+  }
+  
+  .hero-buttons a:hover {
+    background-color: #ED7014;
+    color: white;
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
     .hero {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
     }
+  
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+  
+    .school-logo {
+      width: 140px;
+    }
+  
+    .profile-pic {
+      width: 180px;
+    }
+  }
+  
+  /* Floating Card Style */
+.hero-card {
+    background-color: white;
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Floating Fade Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-    .hero-text h1 {
-        font-size: 28px;
-    }
-
-    .hero-image img {
-        width: 150px;
-    }
-
-    .btn {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 24px;
-    }
-
-    .hero-image img {
-        width: 120px;
-    }
-
-    .btn {
-        padding: 6px 12px;
-        font-size: 12px;
-    }
-}
+  /* Background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('pics/backround.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+ 
+  

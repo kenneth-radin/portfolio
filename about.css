@@ -1,55 +1,13 @@
 /* ABOUT PAGE STYLES */
 body {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
+	background: url("pics/backround.jpg") no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	padding: 20px;
+	margin: 0;
 }
 
-/* Header Navigation */
-header {
-    background-color: #4A153E;
-    color: white;
-    padding: 15px 0;
-    border-radius: 10px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-}
-
-li a.active {
-    text-decoration: underline;
-}
 
 /* About Section */
 .about-section {
@@ -70,6 +28,11 @@ li a.active {
     max-width: 900px;
     width: 100%;
     justify-content: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
 }
 
 /* About Info */
@@ -79,13 +42,15 @@ li a.active {
 }
 
 .about-info h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #ED7014;
+    margin-bottom: 15px;
 }
 
 .about-info p {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    color: #333;
 }
 
 /* Profile Picture */
@@ -93,23 +58,23 @@ li a.active {
     width: 250px;
     max-width: 100%;
     border-radius: 50%;
-    border: 5px solid #333;
+    border: 5px solid #4A153E;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
     .about-section {
         flex-direction: column;
         align-items: center;
@@ -147,4 +112,55 @@ li a.active {
     .about-image img {
         width: 150px;
     }
+}
+
+/* Skills Section */
+.skills-section {
+    margin-top: 60px;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.skills-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.skills-icons img {
+    width: 80px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-icons img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Back Button */
+.back-button {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	display: inline-block;
+	z-index: 1000;
+}
+
+.back-button img {
+	width: 40px;
+	height: 40px;
+	transition: transform 0.3s ease;
+}
+
+.back-button img:hover {
+	transform: scale(1.1);
 }
