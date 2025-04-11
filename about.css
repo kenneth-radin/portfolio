@@ -79,26 +79,28 @@ body {
 	transform: scale(1.05);
 }
 
-/* Skills Section */
+/* Skills Section (Programming Languages) */
 .skills-section {
-	margin-top: 60px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 	text-align: center;
-	padding: 40px 20px;
+	padding: 20px 10px;
 }
 
 .skills-section h2 {
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: #000;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	letter-spacing: 1px;
 }
 
 .skills-icons {
 	display: flex;
 	justify-content: center;
-	gap: 40px;
+	gap: 35px;
 	flex-wrap: wrap;
+	margin-top: 10px;
 }
 
 .skills-icons img {
@@ -111,9 +113,81 @@ body {
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Developer Tools Section */
+.devtools-section {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 20px 10px;
+}
+
+.devtools-section h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+.devtools-icons {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 35px;
+	margin-top: 10px;
+}
+
+.devtools-icons img {
+	width: 80px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.devtools-icons img:hover {
+	transform: scale(1.1);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Certificates Section */
+.certificates-section {
+	text-align: center;
+	padding: 20px;
+	animation: fadeIn 1s ease-in-out;
+	margin-top: 20px;
+}
+
+.certificates-section h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+.certificates-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	padding: 0 10px;
+	margin-top: 10px;
+}
+
+.certificates-container img {
+	max-width: 300px;
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificates-container img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
 /* Back Button */
 .back-button {
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	left: 20px;
 	display: inline-block;
@@ -130,6 +204,18 @@ body {
 	transform: scale(1.1);
 }
 
+/* Fade Animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 /* Responsive Design */
 
 /* Tablets and Small Laptops */
@@ -139,7 +225,8 @@ body {
 		gap: 30px;
 	}
 
-	.skills-icons {
+	.skills-icons,
+	.devtools-icons {
 		gap: 30px;
 	}
 }
@@ -173,8 +260,14 @@ body {
 		max-width: 200px;
 	}
 
-	.skills-icons img {
+	.skills-icons img,
+	.devtools-icons img {
 		width: 60px;
+	}
+
+	.certificates-container {
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
@@ -196,15 +289,18 @@ body {
 		max-width: 150px;
 	}
 
-	.skills-section h2 {
+	.skills-section h2,
+	.devtools-section h2 {
 		font-size: 1.3rem;
 	}
 
-	.skills-icons {
+	.skills-icons,
+	.devtools-icons {
 		gap: 20px;
 	}
 
-	.skills-icons img {
+	.skills-icons img,
+	.devtools-icons img {
 		width: 50px;
 	}
 
@@ -233,19 +329,8 @@ body {
 		max-width: 280px;
 	}
 
-	.skills-icons img {
+	.skills-icons img,
+	.devtools-icons img {
 		width: 90px;
-	}
-}
-
-/* Fade Animation */
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
 	}
 }
