@@ -55,6 +55,8 @@ body {
 	border-radius: 20px;
 	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 	animation: fadeIn 1s ease-in-out;
+	box-sizing: border-box;
+	margin-bottom: 40px; /* Added spacing between contact and certificates */
 }
 
 /* Contact Info */
@@ -95,6 +97,42 @@ body {
 	transform: scale(1.05);
 }
 
+/* Contact Form */
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding: 12px 15px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 1rem;
+	resize: none;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.contact-form button {
+	padding: 12px;
+	background-color: #ED7014;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+	background-color: #d55e0f;
+}
+
 /* Social Media Icons */
 .social-icons {
 	margin-top: 20px;
@@ -115,8 +153,6 @@ body {
 	filter: brightness(1.2);
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
-
 /* Medium Devices (Tablets) */
 @media (max-width: 1024px) {
 	.contact-container {
@@ -132,7 +168,7 @@ body {
 /* Tablets and Small Laptops */
 @media (max-width: 768px) {
 	body {
-		padding: 15px;
+		padding: 10px;
 	}
 
 	.contact-section {
@@ -143,12 +179,16 @@ body {
 
 	.contact-container {
 		flex-direction: column;
-		gap: 30px;
+		gap: 25px;
 		text-align: center;
+		padding: 20px;
+		width: 100%;
+		box-sizing: border-box;
+		border-radius: 15px;
 	}
 
 	.contact-info h1 {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 	}
 
 	.contact-info p {
@@ -156,23 +196,30 @@ body {
 	}
 
 	.contact-image img {
-		width: 200px;
+		width: 180px;
+	}
+
+	.contact-form input,
+	.contact-form textarea,
+	.contact-form button {
+		width: 100%;
+		max-width: none;
 	}
 
 	.social-icons a img {
-		width: 35px;
-		height: 35px;
+		width: 32px;
+		height: 32px;
 	}
 }
 
 /* Phones */
 @media (max-width: 480px) {
 	.contact-container {
-		padding: 20px;
+		padding: 15px;
 	}
 
 	.contact-info h1 {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
 
 	.contact-info p {
@@ -180,12 +227,12 @@ body {
 	}
 
 	.contact-image img {
-		width: 150px;
+		width: 140px;
 	}
 
 	.social-icons a img {
-		width: 30px;
-		height: 30px;
+		width: 28px;
+		height: 28px;
 	}
 
 	.back-button {
@@ -216,7 +263,7 @@ body {
 	}
 }
 
-/* Fade In Animation */
+/* for fade animation */
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -225,5 +272,47 @@ body {
 	to {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+/* Certificates Section */
+.certificates-section {
+	margin-top: 20px; /* Reduced from 60px */
+	text-align: center;
+	color: #ED7014;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.certificates-section h2 {
+	font-size: 1.8rem;
+	margin-bottom: 20px; 
+}
+
+.certificates-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 0 20px;
+}
+
+.certificates-container img {
+	max-width: 300px;
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificates-container img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive for certificates */
+@media (max-width: 768px) {
+	.certificates-container {
+		flex-direction: column;
+		align-items: center;
 	}
 }
