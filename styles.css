@@ -71,15 +71,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 25px;
-  transition: 0.3s ease;
+  border-radius: 6px;
   font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .hero-buttons a:hover {
   background-color: #ED7014;
   color: white;
+  border-color: #ED7014; /* Optional: match border to fill on hover */
 }
+
 
 /* Floating Card Style */
 .hero-card {
@@ -127,7 +129,7 @@ body {
 /* Tablets and Mobile */
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column; /* ✅ This makes the image appear on top */
+    flex-direction: column;
   }
 
   .hero-buttons {

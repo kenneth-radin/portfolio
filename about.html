@@ -1,71 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kenneth Radin | About</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenneth Radin | About</title>
 
-	<!-- Main Stylesheet -->
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="about.css">
-</head>
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="about.css" />
 
+  <!-- Optional: smooth scrolling via CSS for fallback -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  
 <body>
 
-	<!-- Back Button -->
-	<a href="index.html" class="back-button">
-		<img src="pics/chevron.png" alt="Back Button">
-	</a>
+  <!-- Internal Nav with Back Button -->
+  <nav class="mini-nav">
+    <a href="index.html" class="img-button">
+      <img src="pics/chevron.png" alt="Back" />
+    </a>
+    <div class="mini-nav-center">
+      <a href="#languages">Languages</a>
+      <a href="#tools">Dev Tools</a>
+      <a href="#certs">Certificates</a>
+    </div>
+  </nav>
 
-	<!-- About Section -->
-	<section class="about-section">
-		<div class="about-container">
-			<div class="about-image">
-				<img src="pics/pfkona.jpg" alt="Kenneth Radin">
-			</div>
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="pics/pfkona.jpg" alt="Kenneth Radin" />
+      </div>
 
-			<div class="about-info">
-				<h1>About Me</h1>
-				<p>Hello! I’m Kenneth Radin, a passionate web developer with a keen interest in creating responsive and user-friendly websites.</p>
-				<p>I specialize in <strong>JAVA</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and modern frameworks to build seamless digital experiences.</p>
-			</div>
-		</div>
-	</section>
+      <div class="about-info">
+        <h1>About Me</h1>
+        <p>Hello! I’m Kenneth Radin, a passionate web developer with a keen interest in creating responsive and user-friendly websites.</p>
+        <p>I specialize in <strong>JAVA</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and modern frameworks to build seamless digital experiences.</p>
+      </div>
+    </div>
+  </section>
 
-	<!-- Programming Languages Section -->
-	<section class="skills-section">
-		<h2>PROGRAMMING LANGUAGES</h2>
-		<div class="skills-icons">
-			<img src="pics/java.png" alt="Java">
-			<img src="pics/java-script.png" alt="JavaScript">
-			<img src="pics/css-3.png" alt="CSS3">
-			<img src="pics/html-5.png" alt="HTML5">
-			<img src="pics/c-.png" alt="C Language">
-			<img src="pics/letter-c.png" alt="C++ Language">
-		</div>
-	</section>
+  <!-- Programming Languages Section -->
+  <section class="skills-section" id="languages">
+    <h2>PROGRAMMING LANGUAGES</h2>
+    <div class="skills-icons">
+      <img src="pics/java.png" alt="Java" />
+      <img src="pics/java-script.png" alt="JavaScript" />
+      <img src="pics/css-3.png" alt="CSS3" />
+      <img src="pics/html-5.png" alt="HTML5" />
+      <img src="pics/c-.png" alt="C Language" />
+      <img src="pics/letter-c.png" alt="C++ Language" />
+    </div>
+  </section>
 
-	<!-- Dev Tools Section -->
-	<section class="skills-section">
-		<h2>DEVELOPER TOOLS</h2>
-		<div class="skills-icons">
-			<img src="pics/git.png" alt="Git">
-			<img src="pics/intel.png" alt="IntelliJ IDEA">
-			<img src="pics/vs.png" alt="Visual Studio">
-			<img src="pics/netbeans.png" alt="NetBeans">
-		</div>
-	</section>
+  <!-- Dev Tools Section -->
+  <section class="skills-section" id="tools">
+    <h2>DEVELOPER TOOLS</h2>
+    <div class="skills-icons">
+      <img src="pics/git.png" alt="Git" />
+      <img src="pics/intel.png" alt="IntelliJ IDEA" />
+      <img src="pics/vs.png" alt="Visual Studio" />
+      <img src="pics/netbeans.png" alt="NetBeans" />
+    </div>
+  </section>
 
-	<!-- Certificates Section -->
-	<section class="certificates-section">
-		<h2>CERTIFICATES</h2>
-		<div class="certificates-container">
-			<img src="pics/cert1.png" alt="Certificate 1">
-			<img src="pics/cert2.png" alt="Certificate 2">
-			<img src="pics/cert3.png" alt="Certificate 3">
-		</div>
-	</section>
+  <!-- Certificates Section -->
+  <section class="certificates-section" id="certs">
+    <h2>CERTIFICATES</h2>
+    <div class="certificates-container">
+      <img src="pics/cert1.png" alt="Certificate 1" />
+      <img src="pics/cert2.png" alt="Certificate 2" />
+      <img src="pics/cert3.png" alt="Certificate 3" />
+    </div>
+  </section>
 
+  <!-- External Script for Smooth Scroll -->
+  <script src="script.js"></script>
 </body>
 </html>

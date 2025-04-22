@@ -15,7 +15,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 50px;
+	margin-top: 100px;
 	flex-wrap: wrap;
 	width: 100%;
 }
@@ -70,18 +70,16 @@ body {
 .about-image img {
 	width: 100%;
 	border-radius: 50%;
-	border: 5px solid #ED7014; 
+	border: 5px solid #ED7014;
 	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 	transition: transform 0.4s ease;
-}
-
 }
 
 .about-image img:hover {
 	transform: scale(1.05);
 }
 
-/* Skills Section (Programming Languages) */
+/* Skills Section */
 .skills-section {
 	margin-top: 40px;
 	margin-bottom: 30px;
@@ -111,40 +109,6 @@ body {
 }
 
 .skills-icons img:hover {
-	transform: scale(1.1);
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Developer Tools Section */
-.devtools-section {
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	padding: 20px 10px;
-}
-
-.devtools-section h2 {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: #000;
-	margin-bottom: 20px;
-	letter-spacing: 1px;
-}
-
-.devtools-icons {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 35px;
-	margin-top: 10px;
-}
-
-.devtools-icons img {
-	width: 80px;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.devtools-icons img:hover {
 	transform: scale(1.1);
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -206,6 +170,45 @@ body {
 	transform: scale(1.1);
 }
 
+/* Internal Nav */
+.mini-nav {
+	position: fixed;
+	top: 20px;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	padding: 0.25rem 1rem;
+	background-color: #f4f4f4;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+	height: 45px;
+	overflow: hidden;
+	z-index: 999;
+	margin: 0 auto;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mini-nav a {
+	text-decoration: none;
+	color: #333;
+	font-weight: 600;
+	font-size: 0.9rem;
+	line-height: 1;
+	padding: 0.25rem 0.5rem;
+	border-radius: 6px;
+	transition: background 0.3s, color 0.3s;
+}
+
+.mini-nav a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
 /* Fade Animation */
 @keyframes fadeIn {
 	from {
@@ -219,21 +222,16 @@ body {
 }
 
 /* Responsive Design */
-
-/* Tablets and Small Laptops */
 @media (max-width: 1024px) {
 	.about-container {
 		padding: 30px 15px;
 		gap: 30px;
 	}
-
-	.skills-icons,
-	.devtools-icons {
+	.skills-icons {
 		gap: 30px;
 	}
 }
 
-/* Mobile & Narrow Screens */
 @media (max-width: 768px) {
 	body {
 		padding: 10px;
@@ -262,48 +260,13 @@ body {
 		max-width: 200px;
 	}
 
-	.skills-icons img,
-	.devtools-icons img {
+	.skills-icons img {
 		width: 60px;
 	}
 
 	.certificates-container {
 		flex-direction: column;
 		align-items: center;
-	}
-}
-
-/* Phones */
-@media (max-width: 480px) {
-	.about-container {
-		padding: 20px;
-	}
-
-	.about-info h1 {
-		font-size: 1.4rem;
-	}
-
-	.about-info p {
-		font-size: 0.95rem;
-	}
-
-	.about-image {
-		max-width: 150px;
-	}
-
-	.skills-section h2,
-	.devtools-section h2 {
-		font-size: 1.3rem;
-	}
-
-	.skills-icons,
-	.devtools-icons {
-		gap: 20px;
-	}
-
-	.skills-icons img,
-	.devtools-icons img {
-		width: 50px;
 	}
 
 	.back-button {
@@ -317,7 +280,32 @@ body {
 	}
 }
 
-/* Large Screens */
+@media (max-width: 480px) {
+	.about-info h1 {
+		font-size: 1.4rem;
+	}
+
+	.about-info p {
+		font-size: 0.95rem;
+	}
+
+	.about-image {
+		max-width: 150px;
+	}
+
+	.skills-section h2 {
+		font-size: 1.3rem;
+	}
+
+	.skills-icons {
+		gap: 20px;
+	}
+
+	.skills-icons img {
+		width: 50px;
+	}
+}
+
 @media (min-width: 1200px) {
 	.about-info h1 {
 		font-size: 2.5rem;
@@ -331,8 +319,32 @@ body {
 		max-width: 280px;
 	}
 
-	.skills-icons img,
-	.devtools-icons img {
+	.skills-icons img {
 		width: 90px;
 	}
+}
+
+/* Back Button Image Styled */
+.img-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	transition: transform 0.3s ease;
+}
+
+.img-button img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	transition: transform 0.3s ease;
+}
+
+.img-button:hover img {
+	transform: scale(1.1);
 }
