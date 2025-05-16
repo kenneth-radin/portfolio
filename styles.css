@@ -2,10 +2,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Dosis', sans-serif;
   background: url('pics/backround.jpg') no-repeat center center fixed;
   background-size: cover;
   text-align: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* Logo Styling */
@@ -18,9 +20,49 @@ body {
   font-size: 22px;
   font-weight: bold;
   color: #4A153E;
+  font-family: 'Francois One', sans-serif;
 }
 
-/* Hero Section Layout */
+/* 🌟 Mini Image Navigation Bar */
+.mini-nav {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: auto;
+  z-index: 999;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.button-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Hero Section Layout */
 .hero {
   display: flex;
   justify-content: center;
@@ -35,14 +77,25 @@ body {
   text-align: center;
 }
 
-.hero-text span {
+.hero-text p {
+  font-family: 'Dosis', sans-serif;
+}
+
+.hero-text h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.hero-text h1 span {
   color: #ED7014;
   font-weight: bold;
 }
 
-.school-logo {
-  width: 180px;
-  margin-top: 15px;
+.hero-text h3 {
+  font-family: 'Francois One', sans-serif;
+  font-size: 1.2rem;
+  margin: 10px 0;
 }
 
 .profile-pic {
@@ -52,7 +105,13 @@ body {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
 
-/* Navigation Buttons */
+/* 🌟 School Logo (if used) */
+.school-logo {
+  width: 180px;
+  margin-top: 15px;
+}
+
+/* 🌟 Hero Buttons (below card) */
 .hero-buttons {
   margin-top: 30px;
   display: flex;
@@ -73,17 +132,17 @@ body {
   justify-content: center;
   border-radius: 6px;
   font-size: 1rem;
+  font-family: 'Francois One', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .hero-buttons a:hover {
   background-color: #ED7014;
   color: white;
-  border-color: #ED7014; /* Optional: match border to fill on hover */
+  border-color: #ED7014;
 }
 
-
-/* Floating Card Style */
+/* 🌟 Hero Card Style */
 .hero-card {
   background-color: white;
   max-width: 950px;
@@ -94,18 +153,19 @@ body {
   animation: fadeIn 0.8s ease-in-out;
 }
 
-/* Floating Fade Animation */
+/* 🌟 Floating Fade Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
+/* 📱 Responsive Design */
 
 /* Medium Devices (Tablets) */
 @media (max-width: 1024px) {
@@ -154,6 +214,16 @@ body {
     margin: 30px 20px;
     padding: 25px;
   }
+
+  .mini-nav {
+    top: 10px;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .nav-button {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /* Small Phones */
@@ -181,6 +251,11 @@ body {
     height: 45px;
     font-size: 0.95rem;
   }
+
+  .nav-button {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 /* Large Screens (Desktops & 2K+) */
@@ -200,6 +275,9 @@ body {
   .school-logo {
     width: 200px;
   }
+
+  .nav-button {
+    width: 40px;
+    height: 40px;
+  }
 }
-
-

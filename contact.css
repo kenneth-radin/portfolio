@@ -2,7 +2,7 @@
 body {
 	background: url("pics/backround.jpg") no-repeat center center fixed;
 	background-size: cover;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Dosis', sans-serif;
 	text-align: center;
 	padding: 20px;
 	margin: 0;
@@ -56,11 +56,12 @@ body {
 	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 	animation: fadeIn 1s ease-in-out;
 	box-sizing: border-box;
-	margin-top: 40px; 
+	margin-top: 40px;
 }
 
 /* Contact Info */
 .contact-info h1 {
+	font-family: 'Anton', sans-serif;
 	font-size: 2.2rem;
 	color: #ED7014;
 	margin-bottom: 15px;
@@ -93,8 +94,6 @@ body {
 	transition: transform 0.4s ease;
 }
 
-
-
 .contact-image img:hover {
 	transform: scale(1.05);
 }
@@ -118,6 +117,7 @@ body {
 	resize: none;
 	box-sizing: border-box;
 	width: 100%;
+	font-family: 'Dosis', sans-serif;
 }
 
 .contact-form button {
@@ -129,6 +129,7 @@ body {
 	font-size: 1rem;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+	font-family: 'Francois One', sans-serif;
 }
 
 .contact-form button:hover {
@@ -155,7 +156,7 @@ body {
 	filter: brightness(1.2);
 }
 
-/* Medium Devices (Tablets) */
+/* Responsive Media Queries */
 @media (max-width: 1024px) {
 	.contact-container {
 		padding: 30px;
@@ -167,7 +168,6 @@ body {
 	}
 }
 
-/* Tablets and Small Laptops */
 @media (max-width: 768px) {
 	body {
 		padding: 10px;
@@ -214,7 +214,6 @@ body {
 	}
 }
 
-/* Phones */
 @media (max-width: 480px) {
 	.contact-container {
 		padding: 15px;
@@ -245,7 +244,6 @@ body {
 	}
 }
 
-/* Large Screens (Desktops & 2K+) */
 @media (min-width: 1200px) {
 	.contact-info h1 {
 		font-size: 2.5rem;
@@ -265,7 +263,7 @@ body {
 	}
 }
 
-/* for fade animation */
+/* Fade animation */
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -278,7 +276,6 @@ body {
 }
 
 /* Mini Navbar */
-/* Internal Nav - Smaller and Shadow Fix */
 .mini-nav {
 	position: fixed;
 	top: 20px;
@@ -298,18 +295,6 @@ body {
 	margin: 0 auto;
 }
 
-.nav-button {
-	width: 28px;
-	height: 28px;
-	cursor: pointer;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.nav-button:hover {
-	transform: scale(1.08);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
 .button-nav {
 	display: flex;
 	justify-content: center;
@@ -321,13 +306,11 @@ body {
 .nav-button {
 	width: 36px;
 	height: 36px;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav-button:hover {
 	transform: scale(1.1);
 	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
-

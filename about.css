@@ -1,310 +1,251 @@
 /* GLOBAL STYLES */
+
 body {
-	background: url("pics/backround.jpg") no-repeat center center fixed;
-	background-size: cover;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	text-align: center;
-	padding: 20px;
-	margin: 0;
-	box-sizing: border-box;
-	overflow-x: hidden;
+  background: url("pics/backround.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* About Section */
 .about-section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 100px;
-	flex-wrap: wrap;
-	width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 /* About Container */
 .about-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 50px;
-	flex-wrap: wrap;
-	width: 100%;
-	max-width: 1000px;
-	background-color: #fff;
-	padding: 40px 20px;
-	border-radius: 20px;
-	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-	animation: fadeIn 1s ease-in-out;
-	box-sizing: border-box;
-	margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 /* About Info */
 .about-info {
-	text-align: center;
-	max-width: 500px;
-	width: 100%;
-	box-sizing: border-box;
-	padding: 0 10px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
 }
 
 .about-info h1 {
-	font-size: 2.2rem;
-	color: #ED7014;
-	margin-bottom: 15px;
+  font-family: 'Francois One', sans-serif;
+  font-size: 2.2rem;
+  color: #ED7014;
+  margin-bottom: 15px;
 }
 
 .about-info p {
-	font-size: 1.2rem;
-	margin-bottom: 10px;
-	color: #333;
-	line-height: 1.6;
-	word-break: break-word;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.6;
+  word-break: break-word;
 }
 
 /* Profile Picture */
 .about-image {
-	width: 100%;
-	max-width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
 .about-image img {
-	width: 100%;
-	border-radius: 50%;
-	border: 5px solid #ED7014;
-	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
-	transition: transform 0.4s ease;
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #ED7014;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
 }
 
 .about-image img:hover {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
-
 
 /* Certificates Section */
 .certificates-section {
-	text-align: center;
-	padding: 20px;
-	animation: fadeIn 1s ease-in-out;
-	margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+  margin-top: 20px;
 }
 
 .certificates-section h2 {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: #000;
-	margin-bottom: 20px;
-	letter-spacing: 1px;
+  font-family: 'Francois One', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 .certificates-container {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 25px;
-	padding: 0 10px;
-	margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0 10px;
+  margin-top: 10px;
 }
 
 .certificates-container img {
-	max-width: 300px;
-	width: 100%;
-	border-radius: 15px;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
 }
 
 .certificates-container img:hover {
-	transform: scale(1.05);
-	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
 }
 
 /* Back Button */
 .back-button {
-	position: fixed;
-	top: 20px;
-	left: 20px;
-	display: inline-block;
-	z-index: 1000;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: inline-block;
+  z-index: 1000;
 }
 
 .back-button img {
-	width: 40px;
-	height: 40px;
-	transition: transform 0.3s ease;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
 }
 
 .back-button img:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Internal Nav */
 /* Internal Nav - Smaller and Shadow Fix */
 .mini-nav {
-	position: fixed;
-	top: 20px;
-	left: 0;
-	right: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	padding: 0.4rem 0.8rem;
-	background-color: #f4f4f4;
-	border-radius: 12px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-	height: auto;
-	z-index: 999;
-	width: fit-content;
-	margin: 0 auto;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: auto;
+  z-index: 999;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .nav-button {
-	width: 28px;
-	height: 28px;
-	cursor: pointer;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav-button:hover {
-	transform: scale(1.08);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1.08);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
-
 
 /* Fade Animation */
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-	.about-container {
-		padding: 30px 15px;
-		gap: 30px;
-	}
-	.skills-icons {
-		gap: 30px;
-	}
+  .about-container {
+    padding: 30px 15px;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 768px) {
-	body {
-		padding: 10px;
-	}
+  body {
+    padding: 10px;
+  }
 
-	.about-section {
-		flex-direction: column;
-		align-items: center;
-	}
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
 
-	.about-container {
-		flex-direction: column;
-		gap: 25px;
-		padding: 20px;
-	}
+  .about-container {
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+  }
 
-	.about-info h1 {
-		font-size: 1.6rem;
-	}
+  .about-info h1 {
+    font-size: 1.6rem;
+  }
 
-	.about-info p {
-		font-size: 1rem;
-	}
+  .about-info p {
+    font-size: 1rem;
+  }
 
-	.about-image {
-		max-width: 200px;
-	}
+  .about-image {
+    max-width: 200px;
+  }
 
-	.skills-icons img {
-		width: 60px;
-	}
+  .certificates-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-	.certificates-container {
-		flex-direction: column;
-		align-items: center;
-	}
+  .back-button {
+    top: 10px;
+    left: 10px;
+  }
 
-	.back-button {
-		top: 10px;
-		left: 10px;
-	}
-
-	.back-button img {
-		width: 30px;
-		height: 30px;
-	}
+  .back-button img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media (max-width: 480px) {
-	.about-info h1 {
-		font-size: 1.4rem;
-	}
+  .about-info h1 {
+    font-size: 1.4rem;
+  }
 
-	.about-info p {
-		font-size: 0.95rem;
-	}
+  .about-info p {
+    font-size: 0.95rem;
+  }
 
-	.about-image {
-		max-width: 150px;
-	}
-
-	.skills-section h2 {
-		font-size: 1.3rem;
-	}
-
-	.skills-icons {
-		gap: 20px;
-	}
-
-	.skills-icons img {
-		width: 50px;
-	}
-}
-
-@media (min-width: 1200px) {
-	.about-info h1 {
-		font-size: 2.5rem;
-	}
-
-	.about-info p {
-		font-size: 1.4rem;
-	}
-
-	.about-image {
-		max-width: 280px;
-	}
-
-	.skills-icons img {
-		width: 90px;
-	}
-}
-
-/* Image Button Navigation */
-.button-nav {
-	display: flex;
-	justify-content: center;
-	gap: 0.8rem;
-	margin-top: 20px;
-	flex-wrap: wrap;
-}
-
-.nav-button {
-	width: 36px;
-	height: 36px;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	cursor: pointer;
-}
-
-.nav-button:hover {
-	transform: scale(1.1);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-
+  .about-image {
+    max-width: 150px;
