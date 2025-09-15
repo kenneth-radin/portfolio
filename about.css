@@ -1,5 +1,4 @@
 /* GLOBAL STYLES */
-
 body {
   background: url("pics/backround.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -82,12 +81,14 @@ body {
   transform: scale(1.05);
 }
 
-/* Certificates Section */
+/* 📜 Certificates Section - Clean Look */
 .certificates-section {
   text-align: center;
   padding: 20px;
   animation: fadeIn 1s ease-in-out;
   margin-top: 20px;
+  background: none;   /* Removed container background */
+  box-shadow: none;
 }
 
 .certificates-section h2 {
@@ -122,27 +123,7 @@ body {
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
 }
 
-/* Back Button */
-.back-button {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  display: inline-block;
-  z-index: 1000;
-}
-
-.back-button img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s ease;
-}
-
-.back-button img:hover {
-  transform: scale(1.1);
-}
-
 /* Internal Nav */
-/* Internal Nav - Smaller and Shadow Fix */
 .mini-nav {
   position: fixed;
   top: 20px;
@@ -174,78 +155,3 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Fade Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .about-container {
-    padding: 30px 15px;
-    gap: 30px;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  .about-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-container {
-    flex-direction: column;
-    gap: 25px;
-    padding: 20px;
-  }
-
-  .about-info h1 {
-    font-size: 1.6rem;
-  }
-
-  .about-info p {
-    font-size: 1rem;
-  }
-
-  .about-image {
-    max-width: 200px;
-  }
-
-  .certificates-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .back-button {
-    top: 10px;
-    left: 10px;
-  }
-
-  .back-button img {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-info h1 {
-    font-size: 1.4rem;
-  }
-
-  .about-info p {
-    font-size: 0.95rem;
-  }
-
-  .about-image {
-    max-width: 150px;
