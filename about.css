@@ -29,7 +29,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   max-width: 1000px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent */
   padding: 40px 20px;
   border-radius: 20px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
@@ -87,7 +87,7 @@ body {
   padding: 20px;
   animation: fadeIn 1s ease-in-out;
   margin-top: 20px;
-  background: none;   /* Removed container background */
+  background: none;   /* Transparent background */
   box-shadow: none;
 }
 
@@ -155,3 +155,73 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* Projects Section */
+.projects-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: none;       /* Remove container background */
+  box-shadow: none;       
+  border-radius: 0;       
+  margin: 60px auto 40px; 
+  max-width: 1100px;      
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* 📱 Phone Screenshot Styling */
+.project-phone img {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.project-phone img:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 📝 Info Styling */
+.project-info {
+  max-width: 400px;
+  text-align: left;
+  transition: transform 0.4s ease;
+  cursor: default;
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ED7014;
+}
+
+.project-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Hover Effect for Info */
+.project-info:hover {
+  transform: translateY(-8px);
+}
+
+/* 📱 Bigger Left Phone */
+.project-phone-one img {
+  width: 350px; /* Bigger size for the left phone */
+}
