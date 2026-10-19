@@ -11,12 +11,14 @@ export interface Project {
 
 export interface SkillCategory {
   name: string;
-  skills: { name: string; icon: string }[];
+  skills: { name: string; icon: string; glow: string }[];
 }
 
 export interface Certificate {
   src: string;
   alt: string;
+  title: string;
+  issuer: string;
 }
 
 export const profile = {
@@ -72,56 +74,106 @@ export const projects: Project[] = [
   },
 ];
 
+// `glow` = brand color used for the hover shadow on each icon tile.
 export const skillCategories: SkillCategory[] = [
   {
     name: "Languages",
     skills: [
-      { name: "TypeScript", icon: asset("/pics/java-script.png") },
-      { name: "JavaScript", icon: asset("/pics/java-script.png") },
-      { name: "Java", icon: asset("/pics/java.png") },
-      { name: "C", icon: asset("/pics/letter-c.png") },
-      { name: "Dart", icon: asset("/pics/dart.png") },
-      { name: "HTML5", icon: asset("/pics/html_icon.png") },
-      { name: "CSS3", icon: asset("/pics/css_icon.png") },
+      { name: "TypeScript", icon: asset("/pics/icons/typescript.svg"), glow: "#3178c6" },
+      { name: "JavaScript", icon: asset("/pics/java-script.png"), glow: "#f7df1e" },
+      { name: "Java", icon: asset("/pics/java.png"), glow: "#e76f00" },
+      { name: "C", icon: asset("/pics/letter-c.png"), glow: "#a8b9cc" },
+      { name: "Dart", icon: asset("/pics/dart.png"), glow: "#0175c2" },
+      { name: "HTML5", icon: asset("/pics/html_icon.png"), glow: "#e34f26" },
+      { name: "CSS3", icon: asset("/pics/css_icon.png"), glow: "#1572b6" },
     ],
   },
   {
     name: "Frontend",
     skills: [
-      { name: "Next.js", icon: asset("/pics/java-script.png") },
-      { name: "React", icon: asset("/pics/java-script.png") },
-      { name: "HTML5", icon: asset("/pics/html_icon.png") },
-      { name: "CSS3", icon: asset("/pics/css_icon.png") },
+      { name: "Next.js", icon: asset("/pics/icons/nextjs.svg"), glow: "#ffffff" },
+      { name: "React", icon: asset("/pics/icons/react.svg"), glow: "#61dafb" },
+      { name: "HTML5", icon: asset("/pics/html_icon.png"), glow: "#e34f26" },
+      { name: "CSS3", icon: asset("/pics/css_icon.png"), glow: "#1572b6" },
     ],
   },
   {
     name: "Backend & Database",
     skills: [
-      { name: "Node.js", icon: asset("/pics/node-js.png") },
-      { name: "MongoDB", icon: asset("/pics/mongodb.jpg") },
-      { name: "Firebase", icon: asset("/pics/firebase.png") },
+      { name: "Node.js", icon: asset("/pics/node-js.png"), glow: "#5fa04e" },
+      { name: "MongoDB", icon: asset("/pics/icons/mongodb.svg"), glow: "#00ed64" },
+      { name: "Firebase", icon: asset("/pics/firebase.png"), glow: "#ffca28" },
     ],
   },
   {
     name: "Tools & Platforms",
     skills: [
-      { name: "Git", icon: asset("/pics/git.png") },
-      { name: "IntelliJ", icon: asset("/pics/intel.png") },
-      { name: "VS Code", icon: asset("/pics/vs.png") },
-      { name: "NetBeans", icon: asset("/pics/netbeans.png") },
-      { name: "Flutter", icon: asset("/pics/flutter.png") },
-      { name: "Render", icon: asset("/pics/render.jpg") },
+      { name: "Git", icon: asset("/pics/git.png"), glow: "#f05032" },
+      { name: "IntelliJ", icon: asset("/pics/intel.png"), glow: "#fe315d" },
+      { name: "VS Code", icon: asset("/pics/vs.png"), glow: "#007acc" },
+      { name: "NetBeans", icon: asset("/pics/icons/netbeans.svg"), glow: "#1b6ac6" },
+      { name: "Flutter", icon: asset("/pics/flutter.png"), glow: "#02569b" },
+      { name: "Render", icon: asset("/pics/icons/render.svg"), glow: "#ffffff" },
     ],
   },
 ];
 
+// TODO: update issuer names for the 3 newest certs (softdev/htcss/ciscop) if the defaults are wrong.
 export const certificates: Certificate[] = [
-  { src: asset("/pics/cert1.png"), alt: "Certificate 1" },
-  { src: asset("/pics/cert2.png"), alt: "Certificate 2" },
-  { src: asset("/pics/cert3.png"), alt: "Certificate 3" },
-  { src: asset("/pics/oracle.jpg"), alt: "Oracle Certificate" },
-  { src: asset("/pics/databasecert.jpg"), alt: "Database Certificate" },
-  { src: asset("/pics/mscert.jpg"), alt: "Microsoft Certificate" },
+  {
+    src: asset("/pics/cert1.png"),
+    alt: "Using HTML and CSS to design a website",
+    title: "Using HTML and CSS to design a website",
+    issuer: "DICT",
+  },
+  {
+    src: asset("/pics/cert2.png"),
+    alt: "Principles of web development",
+    title: "Principles of web development",
+    issuer: "DICT",
+  },
+  {
+    src: asset("/pics/cert3.png"),
+    alt: "Basic JavaScript for web dev",
+    title: "Basic JavaScript for web dev",
+    issuer: "DICT",
+  },
+  {
+    src: asset("/pics/oracle.jpg"),
+    alt: "Java foundations",
+    title: "Java foundations",
+    issuer: "Oracle Academy",
+  },
+  {
+    src: asset("/pics/databasecert.jpg"),
+    alt: "Databases",
+    title: "Databases",
+    issuer: "IT Specialist",
+  },
+  {
+    src: asset("/pics/mscert.jpg"),
+    alt: "PowerPoint 2019 Associate",
+    title: "PowerPoint 2019 Associate",
+    issuer: "Microsoft",
+  },
+  {
+    src: asset("/pics/softdev.jpg"),
+    alt: "Software Development",
+    title: "Software Development",
+    issuer: "Issuer TBD",
+  },
+  {
+    src: asset("/pics/htcss.jpg"),
+    alt: "HTML & CSS",
+    title: "HTML & CSS",
+    issuer: "Issuer TBD",
+  },
+  {
+    src: asset("/pics/ciscop.jpg"),
+    alt: "Cisco Networking",
+    title: "Cisco Networking",
+    issuer: "Issuer TBD",
+  },
 ];
 
 // TODO: fill in your real education details, then update this entry.
