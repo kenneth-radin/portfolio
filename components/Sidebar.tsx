@@ -1,3 +1,4 @@
+import { asset } from "@/lib/paths";
 import { profile } from "@/lib/data";
 
 export default function Sidebar() {
@@ -27,7 +28,7 @@ export default function Sidebar() {
               aria-label="GitHub"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/pics/github-logo.png" alt="GitHub" className="h-5 w-5" />
+              <img src={asset("/pics/github-logo.png")} alt="GitHub" className="h-5 w-5" />
             </a>
             <a
               href={profile.linkedin}
@@ -37,7 +38,7 @@ export default function Sidebar() {
               aria-label="LinkedIn"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/pics/linkin.png" alt="LinkedIn" className="h-5 w-5" />
+              <img src={asset("/pics/linkin.png")} alt="LinkedIn" className="h-5 w-5" />
             </a>
             <a
               href={`mailto:${profile.email}`}
@@ -46,7 +47,7 @@ export default function Sidebar() {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/pics/contact-mail.png"
+                src={asset("/pics/contact-mail.png")}
                 alt="Email"
                 className="h-5 w-5 invert"
               />
@@ -61,7 +62,7 @@ export default function Sidebar() {
         <ul className="mt-3 space-y-2 text-sm text-white/80">
           <li className="flex items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/pics/contact-mail.png" alt="" className="h-4 w-4 invert" />
+            <img src={asset("/pics/contact-mail.png")} alt="" className="h-4 w-4 invert" />
             <a
               href={`mailto:${profile.email}`}
               className="hover:text-brand-orange"
@@ -71,7 +72,7 @@ export default function Sidebar() {
           </li>
           <li className="flex items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/pics/github.png" alt="" className="h-4 w-4 invert" />
+            <img src={asset("/pics/github.png")} alt="" className="h-4 w-4 invert" />
             <a
               href={profile.github}
               target="_blank"
