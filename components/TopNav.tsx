@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { BASE_PATH } from "@/lib/paths";
 import { navLinks, profile } from "@/lib/data";
 
 export default function TopNav() {
@@ -51,7 +52,7 @@ export default function TopNav() {
             </a>
           ))}
           <a
-            href="/resume.pdf"
+            href={`${BASE_PATH}/radin-resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="ml-1 hidden rounded-lg bg-brand-orange px-4 py-1.5 font-[family-name:var(--font-sub)] text-white transition-colors hover:bg-brand-orange/85 sm:block"
