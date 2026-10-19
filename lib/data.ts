@@ -33,7 +33,7 @@ export interface Education {
 export const profile = {
   name: "Kenneth Radin",
   headline: "Aspiring IT Professional | Full-Stack Developer",
-  photo: asset("/pics/profile_portfolio.jpg"),
+  photo: asset("/pics/pf.jpg"),
   about: [
     "Hello! I'm Kenneth Radin, a passionate developer with a keen interest in building responsive, user-friendly web and mobile applications.",
     "I work with TypeScript, Next.js, Node.js, and AI integrations to build seamless digital experiences — from REST APIs and mobile apps to full-stack AI products.",
