@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #ed7014;
+  --color-brand-maroon: #4a153e;
+  --color-brand-dark: #1a1016;
+  --color-brand-card: #241820;
+  --font-heading: var(--font-anton), sans-serif;
+  --font-body: var(--font-dosis), sans-serif;
+  --font-sub: var(--font-francois), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: var(--font-body);
+  background:
+    linear-gradient(rgba(16, 10, 14, 0.92), rgba(16, 10, 14, 0.92)),
+    url("/pics/backround.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #f4f4f4;
+}
+
+/* LinkedIn-style card */
+.card {
+  @apply rounded-xl border border-white/10 bg-brand-card/90 shadow-lg backdrop-blur-sm;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:border-brand-orange/50 hover:shadow-lg hover:shadow-brand-orange/10;
+}
+
+.section-title {
+  @apply font-[family-name:var(--font-sub)] text-xl uppercase tracking-wide text-brand-orange;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 0.5s ease both;
+}
