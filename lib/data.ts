@@ -36,14 +36,13 @@ export const profile = {
   photo: asset("/pics/pf.jpg"),
   about: [
     "Hello! I'm Kenneth Radin, a passionate developer with a keen interest in building responsive, user-friendly web and mobile applications.",
-    "I work with TypeScript, Next.js, Node.js, and AI integrations to build seamless digital experiences — from REST APIs and mobile apps to full-stack AI products.",
+    "I work with TypeScript, Next.js, Node.js, and AI integrations to build seamless digital experiences, from REST APIs and mobile apps to full-stack AI products.",
   ],
   email: "elmarkennethradin@gmail.com",
   github: "https://github.com/kenneth-radin",
-  linkedin: "https://www.linkedin.com/in/kenneth-radin-041b95359",
-  // TODO: replace with your real Facebook / Instagram profile URLs.
-  facebook: "https://www.facebook.com/",
-  instagram: "https://www.instagram.com/",
+  linkedin: "https://www.linkedin.com/in/kenneth-radin/",
+  facebook: "https://www.facebook.com/kenneth.radin.16",
+  instagram: "https://www.instagram.com/elmsrrr_/",
 };
 
 // TODO: edit descriptions/screenshots to match your real projects.
