@@ -55,28 +55,28 @@ export const projects: Project[] = [
     description:
       "AI-powered full-stack product built with TypeScript, split across a Next.js frontend (app-grain) and a dedicated backend (backend-grain).",
     tech: ["TypeScript", "Next.js", "AI", "Node.js"],
-    image: asset("/pics/stdomicon.png"),
+    image: asset("/pics/grain.png"),
   },
   {
     title: "Hogwarts Treasury",
     description:
       "Harry Potter-inspired e-commerce website designed with a magical wizarding-world aesthetic. Built during a 24-hour coding challenge, combining themed visual design with an online shopping experience.",
     tech: ["HTML5", "CSS3", "JavaScript", "E-Commerce"],
-    image: asset("/pics/pfkona.jpg"),
+    image: asset("/pics/hthog.jpg"),
   },
   {
     title: "ScentryX",
     description:
       "Backend service for the ScentryX platform, built with Node.js and Express.",
     tech: ["Node.js", "JavaScript", "Backend"],
-    image: asset("/pics/insta2.jpg"),
+    image: asset("/pics/scentry.jpg"),
   },
   {
     title: "Student Schedule Tracker",
     description:
       "Mobile app that helps students track their subject schedules and navigate their classes easily. Built with Flutter and Firebase.",
     tech: ["Flutter", "Dart", "Firebase"],
-    image: asset("/pics/studenprof.png"),
+    image: asset("/pics/schedstu.jpg"),
   },
 ];
 
@@ -190,7 +190,7 @@ export const education: Education[] = [
     status: "Currently Pursuing",
     details:
       "Developing skills in programming, web development, database management, and software development through academic and personal projects.",
-    logo: asset("/pics/stdomicon.png"),
+    logo: asset("/pics/stdom.jpg"),
   },
   {
     school: "St. Matthew Academy of Cavite",
@@ -203,14 +203,14 @@ export const education: Education[] = [
     ],
     details:
       "Led and coordinated a team during a 24-hour coding challenge, contributing to the successful completion of a project that earned the overall championship.",
-    logo: asset("/pics/st-matthew.png"),
+    logo: asset("/pics/stmat.jpg"),
   },
   {
     school: "Talaba Elementary School",
     degree: "Elementary Education",
     status: "Graduate",
     details: "",
-    logo: asset("/pics/talaba.png"),
+    logo: asset("/pics/talabaelem.jpg"),
   },
 ];
 
