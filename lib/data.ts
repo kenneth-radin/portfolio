@@ -30,6 +30,9 @@ export const profile = {
   email: "elmarkennethradin@gmail.com",
   github: "https://github.com/kenneth-radin",
   linkedin: "https://www.linkedin.com/in/kenneth-radin-041b95359",
+  // TODO: replace with your real Facebook / Instagram profile URLs.
+  facebook: "https://www.facebook.com/",
+  instagram: "https://www.instagram.com/",
 };
 
 // TODO: edit descriptions/screenshots to match your real projects.
@@ -45,12 +48,11 @@ export const projects: Project[] = [
     repo: "https://github.com/kenneth-radin/app-grain",
   },
   {
-    title: "AgriDry-AI",
+    title: "Hogwarts Treasury",
     description:
-      "AI-driven frontend application focused on agriculture-tech use cases.",
-    tech: ["AI", "Frontend"],
+      "Harry Potter-inspired e-commerce website designed with a magical wizarding-world aesthetic. Built during a 24-hour coding challenge, combining themed visual design with an online shopping experience.",
+    tech: ["HTML5", "CSS3", "JavaScript", "E-Commerce"],
     image: asset("/pics/pfkona.jpg"),
-    repo: "https://github.com/kenneth-radin/AgriDry-AI-FE",
   },
   {
     title: "ScentryX",
@@ -67,22 +69,6 @@ export const projects: Project[] = [
     tech: ["Flutter", "Dart", "Firebase"],
     image: asset("/pics/studenprof.png"),
     repo: "https://github.com/kenneth-radin/SDCA-IT-ELEC4-Flutter",
-  },
-  {
-    title: "REST API (IT303)",
-    description:
-      "Backend API built with Node.js and MongoDB, following REST conventions with full CRUD operations.",
-    tech: ["Node.js", "MongoDB", "REST API"],
-    image: asset("/pics/prevproj.png"),
-    repo: "https://github.com/kenneth-radin/SDCA-IT303-API",
-  },
-  {
-    title: "Next.js App (IT308)",
-    description:
-      "Full-stack web application developed with Next.js and TypeScript for an IT coursework project.",
-    tech: ["Next.js", "TypeScript", "React"],
-    image: asset("/pics/stdomicon.png"),
-    repo: "https://github.com/kenneth-radin/SDCA-IT308-Next-App",
   },
 ];
 
