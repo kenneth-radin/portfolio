@@ -21,6 +21,15 @@ export interface Certificate {
   issuer: string;
 }
 
+export interface Education {
+  school: string;
+  degree: string;
+  status: string;
+  details: string;
+  achievements?: string[];
+  logo: string;
+}
+
 export const profile = {
   name: "Kenneth Radin",
   headline: "Aspiring IT Professional | Full-Stack Developer",
@@ -47,7 +56,6 @@ export const projects: Project[] = [
       "AI-powered full-stack product built with TypeScript, split across a Next.js frontend (app-grain) and a dedicated backend (backend-grain).",
     tech: ["TypeScript", "Next.js", "AI", "Node.js"],
     image: asset("/pics/stdomicon.png"),
-    repo: "https://github.com/kenneth-radin/app-grain",
   },
   {
     title: "Hogwarts Treasury",
@@ -62,7 +70,6 @@ export const projects: Project[] = [
       "Backend service for the ScentryX platform, built with Node.js and Express.",
     tech: ["Node.js", "JavaScript", "Backend"],
     image: asset("/pics/insta2.jpg"),
-    repo: "https://github.com/kenneth-radin/ScentryX-BE",
   },
   {
     title: "Student Schedule Tracker",
@@ -70,7 +77,6 @@ export const projects: Project[] = [
       "Mobile app that helps students track their subject schedules and navigate their classes easily. Built with Flutter and Firebase.",
     tech: ["Flutter", "Dart", "Firebase"],
     image: asset("/pics/studenprof.png"),
-    repo: "https://github.com/kenneth-radin/SDCA-IT-ELEC4-Flutter",
   },
 ];
 
@@ -148,7 +154,7 @@ export const certificates: Certificate[] = [
     src: asset("/pics/databasecert.jpg"),
     alt: "Databases",
     title: "Databases",
-    issuer: "IT Specialist",
+    issuer: "Certiport",
   },
   {
     src: asset("/pics/mscert.jpg"),
@@ -177,12 +183,34 @@ export const certificates: Certificate[] = [
 ];
 
 // TODO: fill in your real education details, then update this entry.
-export const education = [
+export const education: Education[] = [
   {
-    school: "Your School Name",
-    degree: "Your Course / Degree",
-    years: "20XX – 20XX",
-    logo: asset("/pics/profile_portfolio.jpg"),
+    school: "St. Dominic College of Asia",
+    degree: "Bachelor of Science in Information Technology (BSIT)",
+    status: "Currently Pursuing",
+    details:
+      "Developing skills in programming, web development, database management, and software development through academic and personal projects.",
+    logo: asset("/pics/stdomicon.png"),
+  },
+  {
+    school: "St. Matthew Academy of Cavite",
+    degree: "Senior High School — ICT Strand",
+    status: "Graduate",
+    achievements: [
+      "4th Curricular Awardee",
+      "Leadership Award — 24-Hour Coding Hackathon",
+      "Project Manager — Overall Champion Hackathon Team",
+    ],
+    details:
+      "Led and coordinated a team during a 24-hour coding challenge, contributing to the successful completion of a project that earned the overall championship.",
+    logo: asset("/pics/st-matthew.png"),
+  },
+  {
+    school: "Talaba Elementary School",
+    degree: "Elementary Education",
+    status: "Graduate",
+    details: "",
+    logo: asset("/pics/talaba.png"),
   },
 ];
 

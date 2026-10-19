@@ -37,31 +37,6 @@ export default function ProjectsSection() {
                     </span>
                   ))}
                 </div>
-
-                {(project.repo || project.demo) && (
-                  <div className="mt-4 flex gap-3 text-sm">
-                    {project.repo && (
-                      <a
-                        href={project.repo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-brand-orange hover:underline"
-                      >
-                        GitHub ↗
-                      </a>
-                    )}
-                    {project.demo && (
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-brand-orange hover:underline"
-                      >
-                        Live Demo ↗
-                      </a>
-                    )}
-                  </div>
-                )}
               </div>
             </article>
           ))}
