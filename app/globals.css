@@ -18,9 +18,9 @@ html {
 body {
   font-family: var(--font-body);
   background:
-    linear-gradient(rgba(16, 10, 14, 0.92), rgba(16, 10, 14, 0.92)),
-    url("/portfolio/pics/backround.jpg") no-repeat center center fixed;
-  background-size: cover;
+    radial-gradient(ellipse at top, rgba(74, 21, 62, 0.35), transparent 55%),
+    linear-gradient(#160f14, #100a0e);
+  background-attachment: fixed;
   color: #f4f4f4;
 }
 

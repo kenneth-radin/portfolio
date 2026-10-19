@@ -3,7 +3,7 @@ import { skillCategories } from "@/lib/data";
 export default function SkillsSection() {
   return (
     <section id="skills">
-      <div className="card fade-up p-6">
+      <div className="card fade-up p-7">
         <h2 className="section-title">Skills</h2>
         <div className="mt-5 space-y-6">
           {skillCategories.map((category) => (

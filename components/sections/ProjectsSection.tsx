@@ -3,7 +3,7 @@ import { projects } from "@/lib/data";
 export default function ProjectsSection() {
   return (
     <section id="projects">
-      <div className="card fade-up p-6">
+      <div className="card fade-up p-7">
         <h2 className="section-title">Projects</h2>
         <div className="mt-5 grid gap-5 sm:grid-cols-2">
           {projects.map((project) => (

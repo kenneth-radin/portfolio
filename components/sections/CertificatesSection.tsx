@@ -8,7 +8,7 @@ export default function CertificatesSection() {
 
   return (
     <section id="certificates">
-      <div className="card fade-up p-6">
+      <div className="card fade-up p-7">
         <h2 className="section-title">Certificates</h2>
         <div className="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3">
           {certificates.map((cert) => (

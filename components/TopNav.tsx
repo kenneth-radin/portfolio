@@ -28,9 +28,9 @@ export default function TopNav() {
           <img
             src={profile.photo}
             alt={profile.name}
-            className="h-9 w-9 rounded-full border-2 border-brand-orange object-cover"
+            className="h-10 w-10 rounded-full border-2 border-brand-orange object-cover"
           />
-          <span className="hidden font-[family-name:var(--font-sub)] text-lg text-white sm:block">
+          <span className="font-[family-name:var(--font-sub)] text-lg text-white sm:text-xl">
             {profile.name}
           </span>
         </a>

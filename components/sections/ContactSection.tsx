@@ -47,7 +47,7 @@ export default function ContactSection() {
 
   return (
     <section id="contact">
-      <div className="card fade-up p-6">
+      <div className="card fade-up p-7">
         <h2 className="section-title">Contact</h2>
         <p className="mt-2 text-sm text-white/70">
           Feel free to reach out — I&apos;m open to opportunities and

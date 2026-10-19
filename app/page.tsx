@@ -12,14 +12,14 @@ export default function Home() {
     <div id="top">
       <TopNav />
 
-      <main className="mx-auto grid max-w-6xl gap-5 px-4 pb-16 pt-24 lg:grid-cols-12">
+      <main className="mx-auto grid max-w-7xl gap-5 px-4 pb-16 pt-24 lg:grid-cols-12">
         {/* Left sidebar — LinkedIn profile card */}
-        <div className="lg:col-span-4">
+        <div className="lg:col-span-5">
           <Sidebar />
         </div>
 
         {/* Main feed — sections */}
-        <div className="space-y-5 lg:col-span-8">
+        <div className="space-y-5 lg:col-span-7">
           <AboutSection />
           <ProjectsSection />
           <SkillsSection />
